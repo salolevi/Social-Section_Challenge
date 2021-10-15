@@ -132,7 +132,7 @@ body {
      line-height: 1.5;
  }
 
- @media screen and (min-width: 768px) {
+ @media screen and (min-width: 811px) {
 
     body {
         justify-content: space-around;
@@ -148,7 +148,7 @@ body {
      .banners {
          margin: 0;
          text-align: left;
-         max-width: none;
+         max-width: 30%;
          margin: 0 50px;
      }
 
@@ -159,7 +159,7 @@ body {
 
      .container-reviews {
          max-width: none;
-         flex-basis: 600px;
+         max-width: 30%;
          flex-shrink: 1;
          margin-right: 70px;;
          align-items: center;
@@ -170,6 +170,7 @@ body {
          width: 100%;
          padding: 20px;
          flex-wrap: wrap-reverse;
+         position: relative;
          
      }
 
@@ -186,11 +187,11 @@ body {
      }
 
      .review-card:nth-child(2) {
-         transform: translateX(40px);
+         left: 40px;
      }
 
      .review-card:nth-child(3) {
-        transform: translateX(80px);
+        left: 80px;
      }
 
      .container-testimonies {
