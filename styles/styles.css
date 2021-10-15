@@ -21,8 +21,38 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--white);
-    background-image: url("../images/bg-pattern-top-mobile.svg");
-    background-repeat: no-repeat;
+}
+
+.images {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:130%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.images__top-desktop {
+    display: none;
+}
+
+.images__bottom-desktop {
+    display: none;
+}
+
+.images__top-mobile {
+    object-fit: cover;
+    justify-self: flex-start;
+}
+
+.images__bottom-mobile {
+
+    justify-self: flex-end;
+    object-fit: cover;
 }
 
 .testimonie-card span {
@@ -138,6 +168,26 @@ body {
         justify-content: space-around;
     }
 
+    .images{
+        height: 100%;
+    }
+
+    .images__top-mobile {
+        display: none;
+    }
+
+    .images__bottom-mobile {
+        display: none;
+    }
+
+    .images__top-desktop {
+        display: block;
+    }
+
+    .images__bottom-desktop {
+        display: block;
+    }
+
      .banners-reviews {
          width: 100%;
          display: flex;
@@ -166,11 +216,12 @@ body {
      }
 
      .review-card {
-         flex-direction: row;
-         width: 100%;
-         padding: 20px;
-         flex-wrap: wrap-reverse;
-         position: relative;
+        flex-direction: row;
+        width: 100%;
+        max-width: 420px;
+        padding: 20px;
+        flex-wrap: wrap-reverse;
+        position: relative;
          
      }
 
@@ -203,6 +254,15 @@ body {
      .testimonie-card {
         flex-basis: 300px;
         margin: 0 20px;
+        position: relative;
+     }
+
+     .testimonie-card:nth-child(2) {
+        top: 10px;
+     }
+
+     .testimonie-card:nth-child(3) {
+        top: 20px;
      }
 
 
